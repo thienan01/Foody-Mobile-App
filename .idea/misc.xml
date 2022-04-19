@@ -5,19 +5,29 @@
       <map>
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/banner_background.xml" value="0.1215" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/cate_background.xml" value="0.136" />
+        <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/cate_background1.xml" value="0.136" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/cate_background2.xml" value="0.136" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/cate_background3.xml" value="0.136" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/cate_background4.xml" value="0.136" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/cate_background5.xml" value="0.136" />
+        <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/cycle_background.xml" value="0.136" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/ic_cart.xml" value="0.136" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/input_background.xml" value="0.136" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/login_background.xml" value="0.136" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/login_signup_background.xml" value="0.136" />
+        <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/profile_background.xml" value="0.136" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/search_background.xml" value="0.1215" />
+        <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/layout/a.xml" value="0.184375" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/layout/activity_sign_in.xml" value="0.16666666666666666" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/layout/activity_sign_up.xml" value="0.184375" />
+        <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/layout/fragment_home.xml" value="0.184375" />
+        <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/layout/fragment_notification.xml" value="0.184375" />
+        <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/layout/fragment_profile.xml" value="0.22" />
+        <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/layout/fragment_setting.xml" value="0.184375" />
+        <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/layout/fragment_support.xml" value="0.184375" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/layout/viewholder_category.xml" value="0.4466666666666667" />
+        <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/menu/bottom_nav_menu.xml" value="0.184375" />
       </map>
     </option>
   </component>

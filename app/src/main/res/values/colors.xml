@@ -13,4 +13,5 @@
     <color name="second_primary_background_color">#ffcccb</color>
     <color name="red">#ff1d18</color>
     <color name="text_2">#2b2832</color>
+    <color name="theme_color">#f8f8f8</color>
 </resources>

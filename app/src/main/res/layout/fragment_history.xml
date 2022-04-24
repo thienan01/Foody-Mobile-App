@@ -4,9 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".NotificationFragment"
+    tools:context=".HistoryFragment"
     android:orientation="vertical"
     android:background="@color/theme_color">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -14,7 +15,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Notification"
+            android:text="History"
             android:textStyle="bold"
             android:textSize="20dp"
             android:textAlignment="center"
@@ -45,4 +46,5 @@
             app:layout_constraintRight_toRightOf="parent"
             android:textAlignment="center"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </LinearLayout>

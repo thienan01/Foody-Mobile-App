@@ -3,30 +3,37 @@ package hcmute.edu.vn.foodyapp_04;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationBarView;
-
-import java.util.ArrayList;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 
 public class MainActivity extends AppCompatActivity {
     private
     BottomNavigationView bottomNavigationView;
+    FloatingActionButton btnCart;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         bottomNavigationView = findViewById(R.id.bottomNAVView);
+        btnCart = findViewById(R.id.btnCart);
         configureNAVBar();
         bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentLayout, new HomeFragment()).commit();
+        setListener();
     }
+
+    private void setListener(){
+        btnCart.setOnClickListener(v ->{
+            startActivity(new Intent(this, CartActivity.class));
+        });
+    }
+
     private void configureNAVBar(){
         bottomNavigationView.setBackground(null);
     }
@@ -39,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
                         case  R.id.miHome:
                             selectedFragment = new HomeFragment();
                             break;
-                        case R.id.miSupport:
-                            selectedFragment = new SupportFragment();
+                        case R.id.miHistory:
+                            selectedFragment = new HistoryFragment();
                             break;
                         case R.id.miNotification:
                             selectedFragment = new NotificationFragment();

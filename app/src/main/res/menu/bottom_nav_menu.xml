@@ -3,9 +3,9 @@
     <item android:id="@+id/miHome"
      android:title="Home"
      android:icon="@drawable/ic_home_bar"/>
-    <item android:id="@+id/miSupport"
-        android:title="Support"
-        android:icon="@drawable/ic_support"/>
+    <item android:id="@+id/miHistory"
+        android:title="History"
+        android:icon="@drawable/ic_history"/>
     <item android:id="@+id/placeHolder"
         android:title=""/>
     <item android:id="@+id/miNotification"

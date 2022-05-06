@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SignInActivity"
+    tools:context=".activities.SignInActivity"
     android:background="@color/second_primary_background_color"
     android:weightSum="10"
     android:gravity="bottom">
@@ -80,6 +80,7 @@
                 android:paddingStart="10dp"
                 android:textSize="20dp"/>
             <EditText
+                android:id="@+id/inputPhoneNum"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:paddingStart="10dp"
@@ -100,6 +101,7 @@
             android:layout_marginTop="10dp"
             android:gravity="center">
             <EditText
+                android:id="@+id/inputPassword"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:paddingStart="10dp"

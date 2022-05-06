@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpActivity"
+    tools:context=".activities.SignUpActivity"
     android:orientation="vertical"
     android:background="@color/second_primary_background_color"
     android:weightSum="10"
@@ -31,8 +31,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
+
         <LinearLayout
-            android:id="@+id/phoneNumLayout"
+            android:id="@+id/txtName"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:weightSum="10"
@@ -44,7 +45,32 @@
             android:layout_marginEnd="20dp"
             android:layout_marginTop="30dp"
             android:gravity="center">
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingStart="10dp"
+            android:hint="Enter your name"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:background="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phoneNumLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="10"
+            app:layout_constraintTop_toBottomOf="@+id/txtName"
+            android:background="@drawable/input_background"
+            android:paddingStart="17dp"
+            android:paddingEnd="17dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
             <EditText
+                android:id="@+id/etPhoneNum"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:paddingStart="10dp"
@@ -66,6 +92,7 @@
             android:layout_marginTop="10dp"
             android:gravity="center">
             <EditText
+                android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:paddingStart="10dp"

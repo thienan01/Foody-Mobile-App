@@ -12,6 +12,8 @@
     <color name="primary_Text">#4B4C4E</color>
     <color name="second_primary_background_color">#ffcccb</color>
     <color name="red">#ff1d18</color>
-    <color name="text_2">#2b2832</color>
-    <color name="theme_color">#f8f8f8</color>
+        <color name="text_2">#2b2832</color>
+    <color name="theme_color">#f4f6fb</color>
+    <color name="orange">#ff704d</color>
+    <color name="yellow">#ffd700</color>
 </resources>

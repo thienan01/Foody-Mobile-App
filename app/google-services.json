@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "309253789617",
+    "project_id": "food-app-b9431",
+    "storage_bucket": "food-app-b9431.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309253789617:android:cdb27333bd083176ef0f90",
+        "android_client_info": {
+          "package_name": "hcmute.edu.vn.foodyapp_04"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309253789617-kvfj23emkc2o4egbdlmcjalfs65tv8dk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALbIgkaxoG3wD3Dwg0hAox3CSxUZK4zI4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309253789617-kvfj23emkc2o4egbdlmcjalfs65tv8dk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

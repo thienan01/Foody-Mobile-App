@@ -1,4 +1,4 @@
-package hcmute.edu.vn.foodyapp_04;
+package hcmute.edu.vn.foodyapp_04.activities;
 
 import android.os.Bundle;
 
@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import hcmute.edu.vn.foodyapp_04.R;
 
 /**
  * A simple {@link Fragment} subclass.

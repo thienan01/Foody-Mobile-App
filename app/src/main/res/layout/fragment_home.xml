@@ -13,7 +13,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:background="#C8FF1D18">
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="35dp"

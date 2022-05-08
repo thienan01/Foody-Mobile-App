@@ -1,5 +1,7 @@
 package hcmute.edu.vn.foodyapp_04.activities;
 
+import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -20,17 +22,18 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import hcmute.edu.vn.foodyapp_04.R;
 import hcmute.edu.vn.foodyapp_04.adapter.FoodAdapter;
-import hcmute.edu.vn.foodyapp_04.adapter.FoodAdapter2;
+import hcmute.edu.vn.foodyapp_04.database.DAO;
+import hcmute.edu.vn.foodyapp_04.database.Database;
 import hcmute.edu.vn.foodyapp_04.databinding.FragmentHomeBinding;
+import hcmute.edu.vn.foodyapp_04.listener.IFoodListener;
 import hcmute.edu.vn.foodyapp_04.models.Food;
 import hcmute.edu.vn.foodyapp_04.utilities.Constants;
 import hcmute.edu.vn.foodyapp_04.utilities.PreferenceManager;
 
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment implements IFoodListener {
 
-    FirebaseFirestore database;
+    Database database;
     private PreferenceManager preferenceManager;
     private FragmentHomeBinding binding;
     private FoodAdapter foodAdapter;
@@ -45,6 +48,7 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         binding.rcvFoods.setLayoutManager(new GridLayoutManager(getActivity().getApplicationContext(), 2));
+        database = new Database(getActivity().getApplicationContext(),"FoodAppDB", null ,1 );
         getFoods();
     }
 
@@ -57,31 +61,24 @@ public class HomeFragment extends Fragment {
 
     private void getFoods(){
         isLoading(true);
-        FirebaseFirestore database = FirebaseFirestore.getInstance();
-        database.collection(Constants.KEY_COLLECTION_FOODS)
-                .get()
-                .addOnCompleteListener(task -> {
-                    isLoading(false);
-                    if (task.isSuccessful() && task.getResult() != null){
-                        List<Food> foods = new ArrayList<>();
-                        for (QueryDocumentSnapshot queryDocumentSnapshot : task.getResult()){
-                            Food food   = new Food();
-                            food.name = queryDocumentSnapshot.getString(Constants.KEY_FOOD_NAME);
-                            food.price = queryDocumentSnapshot.getString(Constants.KEY_FOOD_PRICE);
-                            foods.add(food);
-                        }
-                        if (foods.size() > 0){
-                            foodAdapter = new FoodAdapter(foods);
-                            binding.rcvFoods.setAdapter(foodAdapter);
-                            binding.rcvFoods.setVisibility(View.VISIBLE);
-                        }
-                        else{
-                            Toast.makeText(getContext(), "fail", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                    else {
-                        Toast.makeText(getContext(), "fail", Toast.LENGTH_SHORT).show();
-                    }
-                });
+        DAO dao = new DAO();
+        Cursor data = dao.selectAll(database,Constants.KEY_FOOD);
+        List<Food> foodList = new ArrayList<>();
+        int index = 0;
+        while (data.moveToNext()){
+            foodList.add(new Food(data.getInt(0),data.getString(1),data.getString(2),data.getString(3),
+                    data.getString(4),String.valueOf(data.getInt(5))));
+        }
+        if (foodList.size()>0){
+            foodAdapter = new FoodAdapter(foodList,this);
+            binding.rcvFoods.setAdapter(foodAdapter);
+            binding.rcvFoods.setVisibility(View.VISIBLE);
+            isLoading(false);
+        }
+    }
+    public void onFoodClicked(Food food){
+        Intent intent = new Intent(getActivity().getApplicationContext(), FoodDetailActivity.class);
+        intent.putExtra(Constants.KEY_FOOD, food);
+        startActivity(intent);
     }
 }

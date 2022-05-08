@@ -63,12 +63,14 @@
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginTop="40dp">
             <ImageView
+                android:id="@+id/ivProfileImg"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:src="@drawable/profile"
                 android:layout_gravity="center"/>
         </androidx.cardview.widget.CardView>
         <TextView
+            android:id="@+id/txtName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Le Thien An"
@@ -123,7 +125,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="thienan12359@gmail.com"
+                    android:text="No information"
                     android:textSize="15dp"
                     android:textColor="@color/text_2"
                     android:paddingStart="35dp"/>
@@ -158,9 +160,10 @@
                         android:textSize="20dp"/>
                 </LinearLayout>
                 <TextView
+                    android:id="@+id/phoneNumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="0383865402"
+                    android:text="No information"
                     android:textSize="15dp"
                     android:textColor="@color/text_2"
                     android:paddingStart="35dp"/>
@@ -195,10 +198,53 @@
                         android:textColor="@color/text_2"
                         android:textSize="20dp"/>
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="35dp"
+                    android:text="No information"
+                    android:textColor="@color/text_2"
+                    android:textSize="15dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@drawable/info_background"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/uploadLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="30dp"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_upload"
+                        android:backgroundTint="@color/text_2"/>
+                    <TextView
+                        android:id="@+id/txtUploadFood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="Upload Food"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_2"
+                        android:textSize="20dp"/>
+                </LinearLayout>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="186 Tang Nhon Phu Quan 9"
+                    android:text="Upload your food on market"
                     android:textSize="15dp"
                     android:textColor="@color/text_2"
                     android:paddingStart="35dp"/>
@@ -207,7 +253,6 @@
                     android:layout_height="5dp"
                     android:background="@drawable/info_background"/>
             </LinearLayout>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

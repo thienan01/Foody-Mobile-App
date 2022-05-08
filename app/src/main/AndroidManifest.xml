@@ -10,11 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodyApp_04">
         <activity
+            android:name=".activities.UploadFoodActivity"
+            android:exported="false" >
+        </activity>
+        <activity
             android:name=".activities.FoodDetailActivity"
             android:exported="false" />
         <activity
             android:name=".activities.CartActivity"
-            android:exported="false"></activity>
+            android:exported="false" >
+        </activity>
         <activity
             android:name=".activities.SignUpActivity"
             android:exported="false" />

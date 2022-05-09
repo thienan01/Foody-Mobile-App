@@ -23,12 +23,12 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent">
+
             <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_back2"
-                android:tint="@color/black"
-                />
+                android:tint="@color/black" />
         </FrameLayout>
         <TextView
             android:id="@+id/txtCart"
@@ -67,10 +67,37 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="@dimen/_12sdp"
         android:layout_marginEnd="12dp">
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rcvCart"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutCartEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:visibility="gone">
+                <ImageView
+                    android:id="@+id/imgCartEmpty"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:src="@drawable/empty_cart"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </ScrollView>

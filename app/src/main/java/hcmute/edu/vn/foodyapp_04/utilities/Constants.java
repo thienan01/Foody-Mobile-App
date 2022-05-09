@@ -35,4 +35,12 @@ public class Constants {
     public static final String KEY_FOOD_DESCRIPTION = "foodDescription";
     public static final String KEY_FOOD_RESTAURANT_ID = "restaurantId";
 
+    public static final String KEY_CART_LINE = "carLine";
+    public static final String KEY_CART_LINE_IMAGE = "cartImage";
+    public static final String KEY_CART_LINE_NAME = "cartFoodName";
+    public static final String KEY_CART_LINE_PRICE = "cartFoodPrice";
+    public static final String KEY_CART_LINE_QUANTITY = "cartFoodQuantity";
+    public static final String KEY_CART_LINE_USER_ID = "cartUserId";
+
+
 }

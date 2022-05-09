@@ -1,16 +1,40 @@
 package hcmute.edu.vn.foodyapp_04.models;
 
 public class CartLine {
+    private int id;
     private String image;
     private String name;
     private String price;
     private String quantity;
+    private  int userId;
 
-    public CartLine(String image, String name, String price, String quantity) {
+    public CartLine() {
+    }
+
+    public CartLine(int id,String image, String name, String price, String quantity, int userId) {
+        this.id = id;
         this.image = image;
         this.name = name;
         this.price = price;
         this.quantity = quantity;
+        this.userId = userId;
+    }
+
+    public CartLine(String image, String name, String price, String quantity, int userId) {
+        this.image = image;
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+        this.userId = userId;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public String getImage() {

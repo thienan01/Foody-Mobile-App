@@ -62,6 +62,7 @@ public class SignUpActivity extends AppCompatActivity {
         preferenceManager.putBoolean(Constants.KEY_IS_SIGN_IN, true);
         preferenceManager.putString(Constants.KEY_USER_NAME, binding.etName.getText().toString());
         preferenceManager.putString(Constants.KEY_USER_PhoneNumber, binding.etPhoneNum.getText().toString());
+        preferenceManager.putString(Constants.KEY_TYPE,"");
         Intent intent = new Intent(getApplicationContext(),MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);

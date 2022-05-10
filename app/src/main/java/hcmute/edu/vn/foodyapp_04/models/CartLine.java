@@ -2,6 +2,15 @@ package hcmute.edu.vn.foodyapp_04.models;
 
 public class CartLine {
     private int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     private String image;
     private String name;
     private String price;

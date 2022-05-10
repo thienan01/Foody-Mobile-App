@@ -53,7 +53,7 @@ public class CartActivity extends AppCompatActivity {
         }
         else {
             binding.rcvCart.setLayoutManager(new LinearLayoutManager(this));
-            cartAdapter = new CartAdapter(cartLineList);
+            cartAdapter = new CartAdapter(cartLineList, database,getApplicationContext());
             binding.rcvCart.setAdapter(cartAdapter);
         }
     }

@@ -20,9 +20,12 @@
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/cate_background5.xml" value="0.136" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/count_button_background.xml" value="0.1705" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/cycle_background.xml" value="0.136" />
+        <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/delete_button_background.xml" value="0.157" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/ic_add.xml" value="0.175" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/ic_back.xml" value="0.175" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/ic_cart.xml" value="0.136" />
+        <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/ic_close.xml" value="0.157" />
+        <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/ic_delete.xml" value="0.157" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/ic_minus.xml" value="0.175" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/ic_notification.xml" value="0.175" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/drawable/icon_background.xml" value="0.1605" />
@@ -46,7 +49,7 @@
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/layout/fragment_profile.xml" value="0.22" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/layout/fragment_setting.xml" value="0.184375" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/layout/fragment_support.xml" value="0.184375" />
-        <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/layout/item_cart_container.xml" value="0.259375" />
+        <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/layout/item_cart_container.xml" value="0.264" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/layout/item_food_container.xml" value="0.259375" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/layout/line_test.xml" value="0.259375" />
         <entry key="..\:/Course 2022-2023/Mobile programing/FoodyApp_04/app/src/main/res/layout/viewholder_category.xml" value="0.4466666666666667" />

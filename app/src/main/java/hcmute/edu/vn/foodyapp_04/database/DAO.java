@@ -74,5 +74,8 @@ public  class DAO {
         }
         return cartLineList;
     }
+    public static void deleteCartLineById(Database database, String id){
+            database.QueryData("DELETE FROM "+Constants.KEY_CART_LINE+" WHERE id = "+ id);
+    }
 
 }
